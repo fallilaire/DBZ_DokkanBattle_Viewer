@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+	<title>Card Listing</title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</head>
+<body class="centerAlign">
+
+	<div>
+		<h1>Cards Listing</h1>
+	</div>
+
+	<div>
+		<nav class="navbar navbar-toggleable-md navbar-light" style="background-color: #e3f2fd;">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<a class="navbar-brand" href="#">Navbar</a>
+			<div class="collapse navbar-collapse" id="navbarColor03">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+        				<a class="nav-link" href="/cards">All</a>
+      				</li>
+					<li class="nav-item active">
+        				<a class="nav-link" href="/cards/owned">Owned <span class="sr-only">(current)</span></a>
+      				</li>
+					<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          					Sort
+        				</a>
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          					<a class="dropdown-item" href="#">Rarity</a>
+          					<a class="dropdown-item" href="#">Type</a>
+          					<a class="dropdown-item" href="#">HP Max</a>
+							<a class="dropdown-item" href="#">ATK Max</a>
+							<a class="dropdown-item" href="#">DEF Max</a>
+        				</div>
+      				</li>
+					<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          					Filter by: Rarity
+        				</a>
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          					<a class="dropdown-item" href="/cards/rarity/LR">LR</a>
+          					<a class="dropdown-item" href="/cards/rarity/UR">UR</a>
+          					<a class="dropdown-item" href="/cards/rarity/SSR">SSR</a>
+							<a class="dropdown-item" href="/cards/rarity/SR">SR</a>
+							<a class="dropdown-item" href="/cards/rarity/R">R</a>
+							<a class="dropdown-item" href="/cards/rarity/N">N</a>
+        				</div>
+      				</li>
+					<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          					Filter by: Type
+        				</a>
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          					<a class="dropdown-item" href="/cards/type/INT">INT</a>
+          					<a class="dropdown-item" href="/cards/type/TEQ">TEQ</a>
+          					<a class="dropdown-item" href="/cards/type/AGL">AGL</a>
+							<a class="dropdown-item" href="/cards/type/STR">STR</a>
+							<a class="dropdown-item" href="/cards/type/PHY">PHY</a>
+        				</div>
+      				</li>
+				</ul>
+				<form class="form-inline">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+  		</nav>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<% for (var i=0; i < data.length; i++) { %>
+				<div class="col-md-1">
+					<div class="card">
+						<a href="#" data-toggle="modal" data-target="#cardModal" data-a_cardid="<%= data[i]._id %>">
+							<img class="card-img-top" alt="120x105" style="width: 120px; height: 105px;" src="<%= data[i].icon %>" data-holder-rendered="true" />
+						</a>
+    					<div class="card-block">
+							<% if (data[i].owned) { %>
+  								<button type="button" class="btn btn-primary owned" data-target="#ownedCard" data-btn_cardid="<%= data[i]._id %>">O</button>
+							<% }else{ %>
+								<button type="button" class="btn btn-primary notowned" data-target="#ownedCard" data-btn_cardid="<%= data[i]._id %>">X</button>
+							<% } %>
+    					</div>
+					</div>
+				</div>
+			<% } %>
+		</div>
+	</div>
+
+	<div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		<div class="modal-dialog modal-lg" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<table class="table table-striped">
+						<tr>
+							<td rowspan="3"><img id="card_icon" width="120" height="105"></a></td>
+							<td colspan="4"><b><center id="card_name"></center></b></td>
+						</tr>
+						<tr>
+							<td><center><b>Max LvL</b></center></td>
+							<td><center><b>Rarity</b></center></td>
+							<td><center><b>Type</b></center></td>
+							<td><center><b>Cost</b></center></td>
+						</tr>
+						<tr>
+							<td><center id="card_maxLvl"></center></td>
+							<td><center id="card_minRarity"></center></td>
+							<td><center id="card_type"></center></td>
+							<td><center id="card_minCost"></center></td>
+						</tr>
+					</table>
+      			</div>
+      			<div class="modal-body">
+					<table class="table table-striped">
+						<tr>
+							<td rowspan="8"><center><img id="card_img" width="250" height="333" /></center></td>
+							<td colspan="2"></td>
+						</tr>
+						<tr>
+							<td><strong>Leader Skill</strong></td>
+							<td id="card_leaderSkill"></td>
+						</tr>
+						<tr>
+							<td><strong>Super atk</strong></td>
+							<td id="card_superAtk"></td>
+						</tr>
+						<tr>
+							<td><strong>Passive skill</strong></td>
+							<td id="card_passiveSkill"></td>
+						</tr>
+						<tr>
+							<td><strong>Link skill</strong></td>
+							<td id="card_linkSkill"></td>
+						</tr>
+						<tr>
+							<td><strong>Ki meter</strong></td>
+							<td><img id="card_kiMeter" /></td>
+						</tr>
+						<tr>
+							<td><strong>How to obtain</strong></td>
+							<td id="card_obtain"></td>
+						</tr>
+						<tr>
+							<td><strong>Additional information</strong></td>
+							<td id="card_addInfo"></td>
+						</tr>
+					</table>
+      			</div>
+      			<div class="modal-footer">
+        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        			<button type="button" class="btn btn-primary">Send message</button>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+
+	<script src="/public/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+Models :
+
+event.name
+event.levels : [
+	difficulty : [
+		round : [
+			boss : []
+		]
+	]
+]
+
+team.name
+team.events : []
+
+Features :
+- Import json --> mongodb
+	Listing cards
+	Listing link
+	Listing event
+- Lister toutes les cartes
+- Lister les cartes selon des filtres
+- Lister toutes mes cartes
+- Voir une carte
+- Choisir une carte
+- Créer une équipe
+- Ajouter une carte à une équipe
+- Editer carte
+- Calculer les compétences spéciales d'une carte
+- Sauvegarder mes cartes
+- Sauvegarder mes équipes
+
+UI
+- Ecran d'accueil
+- Ecran init base / delta
+- Liste des cartes --> choisir carte
+- Liste de mes cartes --> choisir carte
+- Carte --> Sélec / Déselec
+		--> Assigner équipe
+- Liste des équipes
+- Créer équipe
+
+Filters
+	Rarity
+		LR
+		UR
+		SSR
+		SR
+		R
+		N
+	Element
+		TEQ
+		AGI
+		STR
+		PHY
+		INT
+	Type
+		Super
+		Extreme
+Sort
+	Rarity
+	Type
+	HP Max
+	ATK Max
+	DEF Max
+	Special capabilities
+
+API
+/cards
+/cards/@id
+
+/teams
+/teams/@id

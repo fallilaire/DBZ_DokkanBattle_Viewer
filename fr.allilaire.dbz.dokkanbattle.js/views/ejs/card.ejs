@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<title>Card - <%= data.name %></title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body class="centerAlign">
+
+<div>
+	<div class="col-md-12">
+		<table class="table table-striped">
+			<tr>
+				<td rowspan="3"><img src="<%= data.icon %>" width="120" height="105"></a></td>
+				<td colspan="4"><b><center><%= data.name %></center></b></td>
+			</tr>
+			<tr>
+				<td><center><b>Max LvL</b></center></td>
+				<td><center><b>Rarity</b></center></td>
+				<td><center><b>Type</b></center></td>
+				<td><center><b>Cost</b></center></td>
+			</tr>
+			<tr>
+				<td><center><%= data.maxLvl %></center></td>
+				<td><center><%= data.minRarity %></center></td>
+				<td><center><%= data.type %></center></td>
+				<td><center><%= data.minCost %></center></td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-md-12">
+		<table class="table table-striped">
+			<tr>
+				<td rowspan="8"><center><img src="<%= data.img %>" width="250" height="333" /></center></td>
+				<td colspan="2"></td>
+			</tr>
+			<tr>
+				<td><strong>Leader Skill</strong></td>
+				<td><%= data.leaderSkill %></td>
+			</tr>
+			<tr>
+				<td><strong>Super atk</strong></td>
+				<td><%= data.superAtk %></td>
+			</tr>
+			<tr>
+				<td><strong>Passive skill</strong></td>
+				<td><%= data.passiveSkill %></td>
+			</tr>
+			<tr>
+				<td><strong>Link skill</strong></td>
+				<td><%= data.linkSkill %></td>
+			</tr>
+			<tr>
+				<td><strong>Ki meter</strong></td>
+				<td><img src="<%= data.kiMeter %>" /></td>
+			</tr>
+			<tr>
+				<td><strong>How to obtain</strong></td>
+				<td><%= data.obtain %></td>
+			</tr>
+			<tr>
+				<td><strong>Additional information</strong></td>
+				<td><%= data.addInfo %></td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<button type="button" class="btn btn-lg btn-default"><a href="/cards">List</a></button>
+	</div>
+</div>
+
+</body>
+</html>

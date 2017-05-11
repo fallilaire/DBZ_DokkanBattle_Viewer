@@ -1,0 +1,134 @@
+LOG Nb cards computed
+
+// INT SINT EINT
+// TEQ STEQ ETEQ
+// AGL SAGL EAGL
+// STR SSTR ESTR
+// PHY SPHY EPHY
+
+// Rarity
+N
+R
+SR
+SSR
+UR
+LR Rarity
+
+// Leader Skill
+HTML inside
+
+// Super ATK
+HTML inside
+
+// Passive Skill
+HTML inside
+
+// How to obtain
+HTML inside
+
+// Additional information
+HTML inside
+
+//Server
+Japan
+Global
+
+--------------------------------
+
+[
+    {
+        "name": "Leading to Victory Super Gogeta",
+        "addInfo": "
+<a href=\"/wiki/RAISE_HP\" class=\"image image-thumbnail link-internal\" title=\"RAISE HP\">
+	<img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"HP Boost\" class=\"lzy lzyPlcHld \" data-image-key=\"HP_Boost.png\" data-image-name=\"HP Boost.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/ff/HP_Boost.png/revision/latest?cb=20170320122339\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\">
+	<noscript>
+		<img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/ff/HP_Boost.png/revision/latest?cb=20170320122339\" alt=\"HP Boost\" class=\"\"data-image-key=\"HP_Boost.png\" data-image-name=\"HP Boost.png\" width=\"65\" height=\"48\">
+	</noscript>
+</a>
+<a href=\"/wiki/KI_BOOST\" class=\"image image-thumbnail link-internal\" title=\"KI BOOST\">
+	<img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"St 0003\" class=\"lzy lzyPlcHld \" data-image-key=\"St_0003.png\" data-image-name=\"St 0003.png\" data-src=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/5/5a/St_0003.png/revision/latest?cb=20160408133459\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\">
+	<noscript>
+		<img src=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/5/5a/St_0003.png/revision/latest?cb=20160408133459\" alt=\"St 0003\" class=\"\" data-image-key=\"St_0003.png\" data-image-name=\"St 0003.png\" width=\"65\" height=\"48\">
+	</noscript>
+</a>
+
+<a href=\"/wiki/RAISE_ATTACK\" class=\"image image-thumbnail link-internal\" title=\"RAISE ATTACK\">
+<img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"St 0001\" class=\"lzy lzyPlcHld \" data-image-key=\"St_0001.png\" data-image-name=\"St 0001.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/b/b4/St_0001.png/revision/latest?cb=20160408133439\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/b/b4/St_0001.png/revision/latest?cb=20160408133439\" alt=\"St 0001\" class=\"\" data-image-key=\"St_0001.png\" data-image-name=\"St 0001.png\" width=\"65\" height=\"48\"></noscript></a> <a href=\"/wiki/Disable_Guard\" class=\"image image-thumbnail link-internal\" title=\"Disable Guard\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"Disable G\" class=\"lzy lzyPlcHld \" data-image-key=\"Disable_G.png\" data-image-name=\"Disable G.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/f2/Disable_G.png/revision/latest?cb=20160825224448\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/f2/Disable_G.png/revision/latest?cb=20160825224448\" alt=\"Disable G\" class=\"\" data-image-key=\"Disable_G.png\" data-image-name=\"Disable G.png\" width=\"65\" height=\"48\"></noscript></a> <a href=\"/wiki/LOWER_ATTACK\" class=\"image image-thumbnail link-internal\" title=\"LOWER ATTACK\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"St 0011\" class=\"lzy lzyPlcHld \" data-image-key=\"St_0011.png\" data-image-name=\"St 0011.png\" data-src=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/4/44/St_0011.png/revision/latest?cb=20160408133545\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/4/44/St_0011.png/revision/latest?cb=20160408133545\" alt=\"St 0011\" class=\"\" data-image-key=\"St_0011.png\" data-image-name=\"St 0011.png\" width=\"65\" height=\"48\"></noscript></a> <a href=\"/wiki/LOWER_DEFENSE\" class=\"image image-thumbnail link-internal\" title=\"LOWER DEFENSE\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"St 0012\" class=\"lzy lzyPlcHld \" data-image-key=\"St_0012.png\" data-image-name=\"St 0012.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/8/82/St_0012.png/revision/latest?cb=20160408133553\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/8/82/St_0012.png/revision/latest?cb=20160408133553\" alt=\"St 0012\" class=\"\" data-image-key=\"St_0012.png\" data-image-name=\"St 0012.png\" width=\"65\" height=\"48\"></noscript></a><br>\n<p>&#x25BA; <b>This character is required for the event: &#x25BA; <a href=\"/wiki/A_Fiend_Possessed\" title=\"A Fiend Possessed\">A Fiend Possessed</a></b>\n</p>\n&#x25BA; 12 Ki Multiplier is is 140%",        "leaderSkill": "<a href=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/2/2b/SINT_icon.png/revision/latest?cb=20150825230950\" class=\"image image-thumbnail\">
+<img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"SINT icon\" class=\"lzy lzyPlcHld \" data-image-key=\"SINT_icon.png\" data-image-name=\"SINT icon.png\" data-src=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/2/2b/SINT_icon.png/revision/latest/scale-to-width-down/30?cb=20150825230950\" width=\"30\" height=\"30\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/2/2b/SINT_icon.png/revision/latest/scale-to-width-down/30?cb=20150825230950\" alt=\"SINT icon\" class=\"\" data-image-key=\"SINT_icon.png\" data-image-name=\"SINT icon.png\" width=\"30\" height=\"30\"></noscript></a> Ki +2 &amp; HP, ATK, &amp; DEF +100% <br> <a href=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/3/3d/EINT_icon.png/revision/latest?cb=20150825230957\" class=\"image image-thumbnail\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"EINT icon\" class=\"lzy lzyPlcHld \" data-image-key=\"EINT_icon.png\" data-image-name=\"EINT icon.png\" data-src=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/3/3d/EINT_icon.png/revision/latest/scale-to-width-down/30?cb=20150825230957\" width=\"30\" height=\"30\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/3/3d/EINT_icon.png/revision/latest/scale-to-width-down/30?cb=20150825230957\" alt=\"EINT icon\" class=\"\" data-image-key=\"EINT_icon.png\" data-image-name=\"EINT icon.png\" width=\"30\" height=\"30\"></noscript></a> HP, ATK, &amp; DEF +40%"
+,
+        "obtain": "<a href=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/9/95/Japan_server.png/revision/latest?cb=20150930163423\" class=\"image image-thumbnail\"><img src=
+
+\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"Japan server\" class=\"lzy lzyPlcHld \" data-image-key=\"Japan_server.png\" data-image-name=\"Japan server.png\" data-src=
+
+\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/9/95/Japan_server.png/revision/latest?cb=20150930163423\" width=\"32\" height=\"32\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=
+
+\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/9/95/Japan_server.png/revision/latest?cb=20150930163423\" alt=\"Japan server\" class=\"\" data-image-key=\"Japan_server.png\" data-image-name=\"Japan server.png\" width=
+
+\"32\" height=\"32\"></noscript></a> <b>- Only available on the Japanese version</b> <br>Various Dokkan Festival Summons"
+    }
+]
+
+    {
+        "addInfo": "<img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/ff/HP_Boost.png/revision/latest?cb=20170320122339\" alt=\"HP Boost\" class=\"\" data-image-key=\"HP_Boost.png\" data-image-name=\"HP Boost.png\" width=\"65\" height=\"48\">",
+        "addInfo": "
+        <a href=\"/wiki/RAISE_HP\" class=\"image image-thumbnail link-internal\" title=\"RAISE HP\">
+            <img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"HP Boost\" class=\"lzy lzyPlcHld \" data-image-key=\"HP_Boost.png\" data-image-name=\"HP Boost.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/ff/HP_Boost.png/revision/latest?cb=20170320122339\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript>
+            <img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/ff/HP_Boost.png/revision/latest?cb=20170320122339\" alt=\"HP Boost\" class=\"\" data-image-key=\"HP_Boost.png\" data-image-name=\"HP Boost.png\" width=\"65\" height=\"48\"></noscript></a> <a href=\"/wiki/KI_BOOST\" class=\"image image-thumbnail link-internal\" title=\"KI BOOST\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"St 0003\" class=\"lzy lzyPlcHld \" data-image-key=\"St_0003.png\" data-image-name=\"St 0003.png\" data-src=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/5/5a/St_0003.png/revision/latest?cb=20160408133459\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/5/5a/St_0003.png/revision/latest?cb=20160408133459\" alt=\"St 0003\" class=\"\" data-image-key=\"St_0003.png\" data-image-name=\"St 0003.png\" width=\"65\" height=\"48\"></noscript></a> <a href=\"/wiki/RAISE_ATTACK\" class=\"image image-thumbnail link-internal\" title=\"RAISE ATTACK\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"St 0001\" class=\"lzy lzyPlcHld \" data-image-key=\"St_0001.png\" data-image-name=\"St 0001.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/b/b4/St_0001.png/revision/latest?cb=20160408133439\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/b/b4/St_0001.png/revision/latest?cb=20160408133439\" alt=\"St 0001\" class=\"\" data-image-key=\"St_0001.png\" data-image-name=\"St 0001.png\" width=\"65\" height=\"48\"></noscript></a> <a href=\"/wiki/Disable_Guard\" class=\"image image-thumbnail link-internal\" title=\"Disable Guard\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"Disable G\" class=\"lzy lzyPlcHld \" data-image-key=\"Disable_G.png\" data-image-name=\"Disable G.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/f2/Disable_G.png/revision/latest?cb=20160825224448\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/f/f2/Disable_G.png/revision/latest?cb=20160825224448\" alt=\"Disable G\" class=\"\" data-image-key=\"Disable_G.png\" data-image-name=\"Disable G.png\" width=\"65\" height=\"48\"></noscript></a> <a href=\"/wiki/LOWER_ATTACK\" class=\"image image-thumbnail link-internal\" title=\"LOWER ATTACK\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"St 0011\" class=\"lzy lzyPlcHld \" data-image-key=\"St_0011.png\" data-image-name=\"St 0011.png\" data-src=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/4/44/St_0011.png/revision/latest?cb=20160408133545\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/4/44/St_0011.png/revision/latest?cb=20160408133545\" alt=\"St 0011\" class=\"\" data-image-key=\"St_0011.png\" data-image-name=\"St 0011.png\" width=\"65\" height=\"48\"></noscript></a> <a href=\"/wiki/LOWER_DEFENSE\" class=\"image image-thumbnail link-internal\" title=\"LOWER DEFENSE\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"St 0012\" class=\"lzy lzyPlcHld \" data-image-key=\"St_0012.png\" data-image-name=\"St 0012.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/8/82/St_0012.png/revision/latest?cb=20160408133553\" width=\"65\" height=\"48\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/8/82/St_0012.png/revision/latest?cb=20160408133553\" alt=\"St 0012\" class=\"\" data-image-key=\"St_0012.png\" data-image-name=\"St 0012.png\" width=\"65\" height=\"48\"></noscript></a><br>\n<p>&#x25BA; <b>This character is required for the event: &#x25BA; <a href=\"/wiki/A_Fiend_Possessed\" title=\"A Fiend Possessed\">A Fiend Possessed</a></b>\n</p>\n&#x25BA; 12 Ki Multiplier is is 140%",
+        "awaken": "",
+        "baseAtk": "2292",
+        "baseDef": "862",
+        "baseHp": "1922",
+        "icon": "https://vignette4.wikia.nocookie.net/dbz-dokkanbattle/images/6/63/Thum_gogeta_ssr_int.png/revision/latest/scale-to-width-down/120?cb=20170428104739",
+        "img": "https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/6/62/SSR_SS_Gogeta_INT_HD_v4.png/revision/latest/scale-to-width-down/250?cb=20170429134007",
+        "kiMeter": "https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/c/cc/Kimeter_type4.png/revision/latest/scale-to-width-down/250?cb=20150907214217",
+        "leaderSkill": "<a href=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/2/2b/SINT_icon.png/revision/latest?cb=20150825230950\" class=\"image image-thumbnail\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"SINT icon\" class=\"lzy lzyPlcHld \" data-image-key=\"SINT_icon.png\" data-image-name=\"SINT icon.png\" data-src=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/2/2b/SINT_icon.png/revision/latest/scale-to-width-down/30?cb=20150825230950\" width=\"30\" height=\"30\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette1.wikia.nocookie.net/dbz-dokkanbattle/images/2/2b/SINT_icon.png/revision/latest/scale-to-width-down/30?cb=20150825230950\" alt=\"SINT icon\" class=\"\" data-image-key=\"SINT_icon.png\" data-image-name=\"SINT icon.png\" width=\"30\" height=\"30\"></noscript></a> Ki +2 &amp; HP, ATK, &amp; DEF +100% <br> <a href=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/3/3d/EINT_icon.png/revision/latest?cb=20150825230957\" class=\"image image-thumbnail\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"EINT icon\" class=\"lzy lzyPlcHld \" data-image-key=\"EINT_icon.png\" data-image-name=\"EINT icon.png\" data-src=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/3/3d/EINT_icon.png/revision/latest/scale-to-width-down/30?cb=20150825230957\" width=\"30\" height=\"30\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette3.wikia.nocookie.net/dbz-dokkanbattle/images/3/3d/EINT_icon.png/revision/latest/scale-to-width-down/30?cb=20150825230957\" alt=\"EINT icon\" class=\"\" data-image-key=\"EINT_icon.png\" data-image-name=\"EINT icon.png\" width=\"30\" height=\"30\"></noscript></a> HP, ATK, &amp; DEF +40%",
+        "linkSkill": [
+            "Golden Warrior",
+            "Super Saiyan",
+            "Prepared for Battle",
+            "Over in a Flash",
+            "Fused Fighter",
+            "Experienced Fighters"
+        ],
+        "maxAtk": "9740",
+        "maxCost": "35",
+        "maxDef": "3648",
+        "maxHp": "8355",
+        "maxLvl": "100",
+        "maxRarity": "",
+        "minCost": "28",
+        "minLvl": "80",
+        "minRarity": "SSR",
+        "name": "Leading to Victory Super Gogeta",
+        "obtain": "<a href=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/9/95/Japan_server.png/revision/latest?cb=20150930163423\" class=\"image image-thumbnail\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\" alt=\"Japan server\" class=\"lzy lzyPlcHld \" data-image-key=\"Japan_server.png\" data-image-name=\"Japan server.png\" data-src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/9/95/Japan_server.png/revision/latest?cb=20150930163423\" width=\"32\" height=\"32\" onload=\"if(typeof ImgLzy===&apos;object&apos;){ImgLzy.load(this)}\"><noscript><img src=\"https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/9/95/Japan_server.png/revision/latest?cb=20150930163423\" alt=\"Japan server\" class=\"\" data-image-key=\"Japan_server.png\" data-image-name=\"Japan server.png\" width=\"32\" height=\"32\"></noscript></a> <b>- Only available on the Japanese version</b> <br>Various Dokkan Festival Summons",
+        "passiveSkill": "ATK +100%, attacks effective against all Types",
+        "superAtk": "Causes immense damage to enemy &amp; lowers ATK &amp; DEF",
+        "type": "INT",
+        "url": "http://dbz-dokkanbattle.wikia.com/wiki/Leading_to_Victory_Super_Gogeta"
+    },
+
+Dans Add info
+
+/wiki/LOWER_ATTACK
+/wiki/LOWER_DEFENSE
+/wiki/STUN_/_KNOCK_OUT
+/wiki/SEAL_SUPER
+/wiki/KI_BOOST
+/wiki/RAISE_ATTACK
+/wiki/RAISE_DEFENSE
+/wiki/RAISE_HP
+/wiki/KI_CHANGE
+/wiki/NUKE
+/wiki/HP_RECOVERY
+/wiki/BLOCK
+/wiki/ADDITIONAL_ATTACK
+/wiki/ATTACK_ALL
+/wiki/SuperStrike
+/wiki/COUNTER_ATTACK
+/wiki/ALTERATION
+/wiki/Premier_Super
+/wiki/DIVERSE_SUPER
+/wiki/Special_characters_with_special_abilities
+/wiki/Disable_Guard
+/wiki/Stack_Attack
+/wiki/Top_Leaders

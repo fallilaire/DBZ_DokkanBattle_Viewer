@@ -1,0 +1,10 @@
+Dokkan Battle Card Manager
+
+- Import des cartes existantes
+- Listing des cartes existantes
+- Listing de mes cartes
+- Listing des liens avec les cartes correspondantes ou seulement mes cartes
+- Ajouter/Supprimer une carte de mes cartes
+- Gestion d'équipes (faire apparaître notion d'ami)
+- Persistance des données en base
+- Gestion d'évènements
