@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ListView from '@/app/components/ListView'
-import CardView from '@/app/components/CardView'
+import ListView from '@/app/list/ListView'
+import CardView from '@/app/card/CardView'
 
 Vue.use(Router)
 

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import dataJson from '../assets/output.json'
+import dataJson from '@/assets/output.json'
 
 Vue.use(Vuex)
 

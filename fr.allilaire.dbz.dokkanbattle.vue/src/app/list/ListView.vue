@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import SmallCard from './SmallCard.vue'
+import SmallCard from './component/SmallCard.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
