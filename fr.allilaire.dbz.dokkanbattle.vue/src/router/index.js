@@ -14,7 +14,9 @@ export default new Router({
     },
     {
       path: '/card/',
-      component: CardView
+      name: 'card',
+      component: CardView,
+      props: true
     }
   ]
 })

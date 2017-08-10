@@ -1,11 +1,10 @@
 <template>
   <div>
-		<div>Todo</div>
 	  <div class="col-md-12">
 		  <table class="table table-striped">
 			  <tr>
-  				<td rowspan="3"><img :src="data.icon" width="120" height="105"></a></td>
-	  			<td colspan="4"><b><center>{{data.name}}</center></b></td>
+  				<td rowspan="3"><img :src="card.icon" width="120" height="105"></a></td>
+	  			<td colspan="4"><b><center>{{card.name}}</center></b></td>
 		  	</tr>
 			  <tr>
 				  <td><center><b>Max LvL</b></center></td>
@@ -14,46 +13,46 @@
 				  <td><center><b>Cost</b></center></td>
 			  </tr>
 			  <tr>
-				  <td><center>{{data.maxLvl}}</center></td>
-				  <td><center>{{data.minRarity}}</center></td>
-				  <td><center>{{data.type}}</center></td>
-				  <td><center>{{data.minCost}}</center></td>
+				  <td><center>{{card.maxLvl}}</center></td>
+				  <td><center>{{card.minRarity}}</center></td>
+				  <td><center>{{card.type}}</center></td>
+				  <td><center>{{card.minCost}}</center></td>
 			  </tr>
 		  </table>
 	  </div>
 	  <div class="col-md-12">
 		  <table class="table table-striped">
 			  <tr>
-  				<td rowspan="8"><center><img :src="data.img" width="250" height="333" /></center></td>
+  				<td rowspan="8"><center><img :src="card.img" width="250" height="333" /></center></td>
 	  			<td colspan="2"></td>
 		  	</tr>
 			  <tr>
 				  <td><strong>Leader Skill</strong></td>
-				  <td>{{data.leaderSkill}}</td>
+				  <td>{{card.leaderSkill}}</td>
 			  </tr>
 			  <tr>
 				  <td><strong>Super atk</strong></td>
-				  <td>{{data.superAtk}}</td>
+				  <td>{{card.superAtk}}</td>
 			  </tr>
 			  <tr>
 				  <td><strong>Passive skill</strong></td>
-				  <td>{{data.passiveSkill}}</td>
+				  <td>{{card.passiveSkill}}</td>
   			</tr>
 	  		<tr>
 		  		<td><strong>Link skill</strong></td>
-			  	<td>{{data.linkSkill}}</td>
+			  	<td>{{card.linkSkill}}</td>
 			  </tr>
 			  <tr>
 				  <td><strong>Ki meter</strong></td>
-				  <td><img :src="data.kiMeter" /></td>
+				  <td><img :src="card.kiMeter" /></td>
 			  </tr>
 			  <tr>
 				  <td><strong>How to obtain</strong></td>
-				  <td>{{data.obtain}}</td>
+				  <td>{{card.obtain}}</td>
 			  </tr>
 			  <tr>
 				  <td><strong>Additional information</strong></td>
-				  <td>{{data.addInfo}}</td>
+				  <td>{{card.addInfo}}</td>
 			  </tr>
 		  </table>
 	  </div>
@@ -68,14 +67,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
-  data () {
-    return {
-      data: this.$store.state.selectedCard
-    }
-  },
-  created () {
-    console.log(this.data)
-  }
+  props: ['card']
 }
 </script>
 

@@ -13,7 +13,8 @@ export default {
   methods: {
     selectCard () {
       this.$store.commit('selectCard', this.card)
-      this.$router.push('/card')
+      // this.$router.push('/card')
+      this.$router.push({name: 'card', params: { card: this.card }})
     }
   }
 }
