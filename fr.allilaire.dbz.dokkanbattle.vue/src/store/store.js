@@ -12,6 +12,16 @@ export default new Vuex.Store({
   mutations: {
     selectCard (state, card) {
       state.selectedCard = card
+    },
+    ownedCards (state) {
+      state.cards = dataJson.filter(card => card.owned === true)
+    },
+    allCards (state) {
+      state.cards = dataJson
+    },
+    filterByType (state, type) {
+      state.cards = dataJson.filter(card => card.type === type)
+      console.log('store - ' + type)
     }
   }
 })

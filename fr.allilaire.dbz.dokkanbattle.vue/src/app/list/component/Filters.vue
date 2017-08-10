@@ -8,10 +8,10 @@
 		<div class="collapse navbar-collapse" id="navbarColor03">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-        			<a class="nav-link" href="/cards">All</a>
+        			<a class="nav-link" href="#" @click.prevent="allCards()">All</a>
       			</li>
 				<li class="nav-item active">
-        			<a class="nav-link" href="/cards/owned">Owned <span class="sr-only">(current)</span></a>
+        			<a class="nav-link" href="#" @click.prevent="filterByType('PHY')">Owned <span class="sr-only">(current)</span></a>
       			</li>
 				<li class="nav-item dropdown">
         			<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,11 +65,17 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
-  props: ['card'],
   methods: {
-    selectCard () {
-      this.$store.commit('selectCard', this.card)
-      this.$router.push('/card')
+    allCards () {
+      this.$store.commit('allCards')
+    },
+    ownedCards (state) {
+      console.log('coucou')
+      this.$store.commit('ownedCards')
+    },
+    filterByType (type) {
+      console.log(type)
+      this.$store.commit('filterByType', type)
     }
   }
 }

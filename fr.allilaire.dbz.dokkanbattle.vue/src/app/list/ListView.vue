@@ -15,9 +15,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
   components: { Filters, SmallCard },
-  data () {
-    return {
-      cards: this.$store.state.cards
+  computed: {
+    cards () {
+      return this.$store.state.cards
     }
   }
 }
