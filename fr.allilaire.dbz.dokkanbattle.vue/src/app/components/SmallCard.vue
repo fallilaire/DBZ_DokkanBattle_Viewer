@@ -1,6 +1,6 @@
 <template>
   <div class="col-1">
-    <a :href="getUri()"><img :alt="card.name" style="width: 120px; height: 105px;" :src="card.icon" /></a>
+    <img :alt="card.name" style="width: 120px; height: 105px;" :src="card.icon" @click="selectCard()" />
   </div>
 </template>
 
@@ -11,8 +11,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
   props: ['card'],
   methods: {
-    getUri () {
-      return '/card/' + this.card.name
+    selectCard () {
+      this.$store.commit('selectCard', this.card)
+      this.$router.push('/card')
     }
   }
 }

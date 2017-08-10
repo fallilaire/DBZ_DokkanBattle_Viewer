@@ -1,5 +1,6 @@
 <template>
   <div>
+		<div>Todo</div>
 	  <div class="col-md-12">
 		  <table class="table table-striped">
 			  <tr>
@@ -63,21 +64,17 @@
 </template>
 
 <script>
-import dataJson from '../../assets/output.json'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
   data () {
     return {
-      data: this.getCard()
+      data: this.$store.state.selectedCard
     }
   },
-  methods: {
-    getCard () {
-      let selectedCard = dataJson.filter(card => card.name === this.$route.params.id)
-      return selectedCard[0]
-    }
+  created () {
+    console.log(this.data)
   }
 }
 </script>

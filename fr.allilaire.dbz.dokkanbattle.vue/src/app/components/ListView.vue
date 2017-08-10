@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import dataJson from '../../assets/output.json'
 import SmallCard from './SmallCard.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -16,7 +15,7 @@ export default {
   components: { SmallCard },
   data () {
     return {
-      cards: dataJson
+      cards: this.$store.state.cards
     }
   }
 }

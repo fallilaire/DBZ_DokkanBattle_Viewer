@@ -13,18 +13,8 @@ export default new Router({
       component: ListView
     },
     {
-      path: '/card/:id',
+      path: '/card/',
       component: CardView
     }
   ]
 })
-
-/*
-,
-      children: [
-        {
-          path: ':name',
-          component: CardView
-        }
-      ]
-*/
