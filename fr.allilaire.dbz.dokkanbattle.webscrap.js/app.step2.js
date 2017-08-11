@@ -8,36 +8,12 @@ const uuidv5 = require('uuid/v5');
 // Define JSON File
 console.log("\n *STARTING* \n");
 // Get content from file
-var contents = fs.readFileSync("input/listing.json");
-// Define to JSON type
+var contents = fs.readFileSync("output/cards_url.json");
 var jsonContent = JSON.parse(contents);
 var listing = [];
 
 jsonContent.forEach(function(url) {
-
-    var options = {
-        uri: url,
-        transform: function (body) {
-            return cheerio.load(body);
-        }
-    };
-
-    rp(options)
-    .then(function ($) {
-        $('table[border="1"]').filter(function() {
-            let data = $(this);
-            // finding all links in the main table
-            let links = data.find('tr').find('a');
-
-            links.each(function(i, elem) {
-                let url = $(this)[0]['attribs']['href'];
-                if (url.startsWith("/wiki/") && !url.startsWith("/wiki/Category:")) {
-                    parseOneCard("http://dbz-dokkanbattle.wikia.com" + url);
-                }
-            });
-        })
-    })
-    .catch(console.log.bind(console));
+    parseOneCard(url);
 });
 
 function parseOneCard(url) {
@@ -53,7 +29,7 @@ function parseOneCard(url) {
     .then(function ($) {
             // Finally, we'll define the variables we're going to capture
             var json = {
-                id : uuidv5(url, uuidv5.DNS),
+                id : "",//uuidv5(url, uuidv5.DNS),
                 addInfo : "",
                 awaken : "",
                 baseAtk : "",
@@ -88,32 +64,27 @@ function parseOneCard(url) {
             // name
             $('h1').filter(function() {
                 let data = $(this);
-                let name = data.text();
-                json.name = name;
+                json.name = data.text();
             })
             // icon
-            $('#mw-content-text table td a img[width=120]').filter(function() {
+            $('#mw-content-text > table > tbody > tr > td > a').filter(function() {
                 let data = $(this);
-                let src = data[0]['attribs']['src'];
-
-                if (src.substring(0, 4) === 'http') {
-                    json.icon = src;
-                }
+                let src = data[0]['attribs']['href'];
+                json.icon = src;
             })
-            // kimeter & img
-            $('#mw-content-text table td a img[width=250]').filter(function() {
+            // img
+            $('#mw-content-text > div[style="clear: both; overflow:hidden;"] > div[style="float:left; width:30%;"] > table > tbody > tr > td > center > a').filter(function() {
                 let data = $(this);
+                let src = data[0]['attribs']['href'];
 
-                let src = data[0]['attribs']['src'];
+                json.img = src;
+            })
+            // kimeter
+            $('img[alt*="Kimeter"]').filter(function() {
+                let data = $(this).parent();
+                let src = data[0]['attribs']['href'];
 
-                if (src.substring(0, 4) === 'http') {
-                    if (src.includes("Kimeter")) {
-                        json.kiMeter = src;
-                    }
-                    else {
-                        json.img = src;
-                    }
-                }
+                json.kiMeter = src;
             })
             // Min/Max Lvl - Min/Max Cost - Min/Max Rarity - Type
             $('b:contains("Max LvL")').filter(function() {
@@ -148,13 +119,13 @@ function parseOneCard(url) {
                 }
             })
 
-            $('b:contains("How to Obtain")').filter(function() {
+            $('b:contains("How to obtain")').filter(function() {
                 let data = $(this);
                 let tmp = data.parent().parent().parent().next().find('center').first().html();
                 json.obtain = tmp;
             })
 
-            $('b:contains("Additional Information")').filter(function() {
+            $('b:contains("Additional information")').filter(function() {
                 let data = $(this);
                 let tmp = data.parent().parent().parent().next().find('center').first();
                 tmp = tmp.find('noscript').remove();
