@@ -1,8 +1,8 @@
 <template>
 	<div class="container-fluid">
-		<div class="row">
+    <div class="row">
       <filters />
-		  <small-card v-for="card in cards" :key="card.name" :card="card" />
+		  <small-card v-for="card in cards" :card="card" key="card.id"/>
 		</div>
 	</div>
 </template>

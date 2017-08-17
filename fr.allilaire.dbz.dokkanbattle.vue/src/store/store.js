@@ -23,5 +23,13 @@ export default new Vuex.Store({
       state.cards = dataJson.filter(card => card.type === type)
       console.log('store - ' + type)
     }
+  },
+  getters: {
+    names: (state, getters) => {
+      return state.cards.filter(card => card.name)
+    },
+    nbCards: (state, getters) => {
+      return state.cards.length
+    }
   }
 })
